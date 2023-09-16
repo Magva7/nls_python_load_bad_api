@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from myapp1.views import index_page
+from myapp1.views import sync_data_with_api
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-	path('', index_page), # при обращении к главной странице должна запускаться функция index_page
-    # path('about', about_page)
+     # при обращении к главной странице должна запускаться функция index_page
+	path('', index_page),
+    path('sync_data/', sync_data_with_api, name='sync_data'),
 ]
