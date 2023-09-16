@@ -8,3 +8,5 @@
 
 использовать Django 
 либо самому WebService поднять
+
+http://localhost:8000/sync_data/
